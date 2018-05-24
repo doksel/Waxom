@@ -20,11 +20,6 @@ h4{
     font-size: 40px;
 }
 
-p, article{
-    line-height: 28px;
-    margin-bottom: 25px;
-}
-
 hr{
     display: block;
     height: 1px;
@@ -35,14 +30,18 @@ hr{
 }
 
 header{
-    background: rgb(167, 103, 103);
+    background: url(../images/slider1.jpg) no-repeat center;
+    background-size: cover;
     height: 100vh;
     nav{
-        margin-left: 170px !important;
-        margin-right: 170px !important;
-    }
-    a{
-        color: white !important;
+        a{
+            color: white !important;
+        }
+        #myNavbar{
+            a:hover{
+                color: rgb(153,134,117) !important;
+            }        
+        }
     }
     .text{
         h3{
@@ -56,9 +55,22 @@ header{
             font-size: 14px;
         }
         button{
-            background: rgb(153,134,117);
+            background: rgb(199,178,153);
             font-size: 14px;
             color: white;
+            padding: 10px 20px;
         }
     }
 }
+
+// Малые девайсы («ландшафтные телефоны», >= 576px)
+@media (min-width: 576px) {}
+
+// Средние девайсы («таблетки», >= 768px)
+@media (min-width: 768px) {}
+
+// Большие девайсы (десктопы, >= 992px)
+@media (max-width: 992px) {}
+
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (min-width: 1200px) {}

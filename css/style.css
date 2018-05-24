@@ -12,10 +12,6 @@ h1, h2, h3, h4, h5, h6 {
 h4 {
   font-size: 40px; }
 
-p, article {
-  line-height: 28px;
-  margin-bottom: 25px; }
-
 hr {
   display: block;
   height: 1px;
@@ -25,13 +21,13 @@ hr {
   padding: 0; }
 
 header {
-  background: #a76767;
+  background: url(../images/slider1.jpg) no-repeat center;
+  background-size: cover;
   height: 100vh; }
-  header nav {
-    margin-left: 170px !important;
-    margin-right: 170px !important; }
-  header a {
+  header nav a {
     color: white !important; }
+  header nav #myNavbar a:hover {
+    color: #998675 !important; }
   header .text h3 {
     font-size: 36px; }
   header .text h1 {
@@ -40,8 +36,9 @@ header {
   header .text p {
     font-size: 14px; }
   header .text button {
-    background: #998675;
+    background: #c7b299;
     font-size: 14px;
-    color: white; }
+    color: white;
+    padding: 10px 20px; }
 
 /*# sourceMappingURL=style.css.map */
