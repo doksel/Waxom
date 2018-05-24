@@ -1,3 +1,47 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Raleway:300,400,700,800|Roboto:300,400,700");
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: white !important; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; }
+
+h4 {
+  font-size: 40px; }
+
+p, article {
+  line-height: 28px;
+  margin-bottom: 25px; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+header {
+  background: #a76767;
+  height: 100vh; }
+  header nav {
+    margin-left: 170px !important;
+    margin-right: 170px !important; }
+  header a {
+    color: white !important; }
+  header .text h3 {
+    font-size: 36px; }
+  header .text h1 {
+    font-size: 52px;
+    font-weight: 800; }
+  header .text p {
+    font-size: 14px; }
+  header .text button {
+    background: #998675;
+    font-size: 14px;
+    color: white; }
 
 /*# sourceMappingURL=style.css.map */

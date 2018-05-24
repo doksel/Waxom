@@ -2,3 +2,63 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Raleway:300,400,700,800|Roboto:300,400,700');
 // @import '_mixin-animate';
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: white !important;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+}
+
+h4{
+    font-size: 40px;
+}
+
+p, article{
+    line-height: 28px;
+    margin-bottom: 25px;
+}
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(204, 204, 204);
+    margin: 1em 0;
+    padding: 0;
+}
+
+header{
+    background: rgb(167, 103, 103);
+    height: 100vh;
+    nav{
+        margin-left: 170px !important;
+        margin-right: 170px !important;
+    }
+    a{
+        color: white !important;
+    }
+    .text{
+        h3{
+            font-size: 36px;
+        }
+        h1{
+            font-size: 52px;
+            font-weight: 800;
+        }
+        p{
+            font-size: 14px;
+        }
+        button{
+            background: rgb(153,134,117);
+            font-size: 14px;
+            color: white;
+        }
+    }
+}
