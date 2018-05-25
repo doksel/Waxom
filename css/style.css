@@ -14,31 +14,61 @@ h4 {
 
 hr {
   display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #cccccc;
-  margin: 1em 0;
-  padding: 0; }
+  height: 2px;
+  background: #8c8c8c; }
+
+.wraper {
+  position: fixed;
+  top: 0; }
+  .wraper nav a {
+    color: white !important; }
+  .wraper nav .myNavbar a:hover {
+    color: #c7b299 !important; }
 
 header {
-  background: url(../images/slider1.jpg) no-repeat center;
+  background: url(../images/slider/slider1.jpg) no-repeat center;
   background-size: cover;
-  height: 100vh; }
-  header nav a {
-    color: white !important; }
-  header nav #myNavbar a:hover {
-    color: #998675 !important; }
-  header .text h3 {
-    font-size: 36px; }
-  header .text h1 {
-    font-size: 52px;
-    font-weight: 800; }
-  header .text p {
-    font-size: 14px; }
-  header .text button {
-    background: #c7b299;
-    font-size: 14px;
-    color: white;
-    padding: 10px 20px; }
+  height: 100vh;
+  padding-top: 100px; }
+  header .text {
+    margin-bottom: 50px; }
+    header .text h3 {
+      font-size: 36px; }
+    header .text h1 {
+      font-size: 52px;
+      font-weight: 800; }
+    header .text p {
+      font-size: 14px; }
+    header .text button {
+      background: #998675;
+      font-size: 14px;
+      color: white;
+      padding: 10px 20px; }
+
+.waxomRealization {
+  margin-top: 100px; }
+  .waxomRealization img {
+    height: 50px;
+    width: 50px; }
+  .waxomRealization h3 {
+    color: #555555;
+    font-weight: 600; }
+  .waxomRealization article {
+    color: #8c8c8c; }
+  .waxomRealization hr {
+    width: 30%;
+    margin: 20px auto; }
+  .waxomRealization section:hover img, .waxomRealization section:hover h3 {
+    color: #c7b299 !important; }
+  .waxomRealization section:hover hr {
+    background: #c7b299; }
+
+@media (max-width: 992px) {
+  .wraper {
+    background: #353535;
+    position: relative !important; }
+
+  header {
+    padding-top: 0; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,28 +22,31 @@ h4{
 
 hr{
     display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid rgb(204, 204, 204);
-    margin: 1em 0;
-    padding: 0;
+    height: 2px;
+    background:  rgb(140,140,140); 
 }
-
-header{
-    background: url(../images/slider1.jpg) no-repeat center;
-    background-size: cover;
-    height: 100vh;
+.wraper{
+    position: fixed;
+    top: 0;
     nav{
         a{
             color: white !important;
         }
-        #myNavbar{
+        .myNavbar{
             a:hover{
-                color: rgb(153,134,117) !important;
+                color: rgb(199,178,153) !important;
             }        
         }
     }
+}
+
+header{
+    background: url(../images/slider/slider1.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    padding-top: 100px;
     .text{
+        margin-bottom: 50px;
         h3{
             font-size: 36px;
         }
@@ -55,12 +58,40 @@ header{
             font-size: 14px;
         }
         button{
-            background: rgb(199,178,153);
+            background: rgb(153,134,117);
             font-size: 14px;
             color: white;
             padding: 10px 20px;
         }
     }
+}
+
+.waxomRealization{
+    margin-top: 100px;
+    img{
+        height: 50px;
+        width: 50px;
+    }
+    h3{
+        color: rgb(85,85,85);
+        font-weight: 600;
+    }
+    article{
+        color: rgb(140,140,140);        
+    }
+    hr{
+        width: 30%;
+        margin: 20px auto;
+    }
+    section:hover{
+        img, h3{
+            color: rgb(199,178,153) !important;
+        }
+        hr{
+            background: rgb(199,178,153);
+        }
+    }        
+
 }
 
 // Малые девайсы («ландшафтные телефоны», >= 576px)
@@ -70,7 +101,15 @@ header{
 @media (min-width: 768px) {}
 
 // Большие девайсы (десктопы, >= 992px)
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+    .wraper{
+        background: rgb(53, 53, 53);
+        position: relative !important;
+    }
+    header{
+        padding-top: 0;
+    }
+}
 
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (min-width: 1200px) {}
