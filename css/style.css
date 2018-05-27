@@ -114,12 +114,28 @@ header {
 .latestProjects li:hover {
   background: #998675;
   color: white; }
-.latestProjects .card-deck h5 {
-  color: #8c8c8c; }
-.latestProjects .card-deck p {
-  color: #8c8c8c; }
 .latestProjects .card-deck img {
   height: 70%; }
+.latestProjects .card-deck .wraper-hover {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70%;
+  width: 100%;
+  background: rgba(54, 47, 45, 0.6); }
+.latestProjects .card-deck .card-body h5 {
+  color: #c7b299; }
+.latestProjects .card-deck .card-body p {
+  color: #d1d1d1; }
+.latestProjects .card-deck .card:hover .wraper-hover {
+  display: flex; }
+.latestProjects .card-deck .card:hover .card-body {
+  background: #362f2d; }
+.latestProjects .card-deck .card:hover h5 {
+  color: #f2f2f2; }
+.latestProjects .card-deck .card:hover p {
+  color: #c7b299; }
 
 @media (max-width: 1200px) {
   .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {

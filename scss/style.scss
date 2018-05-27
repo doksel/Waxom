@@ -126,7 +126,6 @@ header{
 .textBox{
     @extend .btn;
     @extend .btn:hover;
-    // background: rgb(54,47,45); for the next block
     background: rgb(36,29,26);
     .text{
         span{
@@ -159,15 +158,37 @@ header{
         color: white;
     }
     .card-deck{
-        h5{
-            color: rgb(140,140,140);
-        }
-        p{
-            color: rgb(140,140,140);
-        }
         img{
             height: 70%;
         }
+        .wraper-hover{
+            display: none;
+            position: absolute;
+            top: 0;left: 0;
+            height: 70%;width: 100%;
+            background: rgba(54,47,45, 0.6); 
+        }
+        .card-body{
+            h5{
+                color: rgb(199,178,153);
+            }
+            p{
+                color: rgb(209,209,209);
+            }
+        }
+        .card:hover{
+            .wraper-hover{
+                display: flex;
+            } 
+            .card-body{
+                background: rgb(54,47,45);            }
+            h5{
+                color: rgb(242,242,242);
+            }
+            p{
+                color: rgb(199,178,153);
+            }
+        }    
     }
 }
 
