@@ -1,7 +1,7 @@
 // sass --watch scss/style.scss:css/style.css
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Raleway:300,400,700,800|Roboto:300,400,700');
-// @import '_mixin-animate';
+@import '_button';
 
 
 body{
@@ -45,6 +45,8 @@ header{
     background-size: cover;
     height: 100vh;
     padding-top: 100px;
+    @extend .btn;
+    @extend .btn:hover;
     .text{
         margin-bottom: 50px;
         h3{
@@ -56,12 +58,6 @@ header{
         }
         p{
             font-size: 14px;
-        }
-        button{
-            background: rgb(153,134,117);
-            font-size: 14px;
-            color: white;
-            padding: 10px 20px;
         }
     }
 }
@@ -114,7 +110,7 @@ header{
         .screenshots-right, .screenshots-left{
             position: absolute;
             width: 55%;
-            top: 23.5%;
+            top: 22%;
         }
         .screenshots-right{
             left: 45%;
@@ -123,6 +119,21 @@ header{
             position: relative;
             width: 60%;
             left: 20%;
+        }
+    }
+}
+
+.textBox{
+    @extend .btn;
+    @extend .btn:hover;
+    // background: rgb(54,47,45); for the next block
+    background: rgb(36,29,26);
+    .text{
+        span{
+            color: rgb(199, 178, 153) ;
+        }
+        p{
+            color: rgb(97,88,85);
         }
     }
 }
