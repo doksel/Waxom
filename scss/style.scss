@@ -172,6 +172,14 @@ header{
             }
             .card-body{
                 background: rgb(251,250,248);   
+                position: relative;
+                .arrow_card-boby{
+                    height: 20px;width: 20px;
+                    background: rgb(251,250,248);   
+                    position: absolute;
+                    top: -10px;left: 30px;
+                    transform: rotate(45deg);
+                }
                 h5{
                     color: rgb(199,178,153);
                 }
@@ -185,7 +193,10 @@ header{
                 display: flex;
             } 
             .card-body{
-                background: rgb(54,47,45);   
+                background: rgb(54,47,45); 
+                .arrow_card-boby{
+                    background: rgb(54,47,45); 
+                }  
                 h5{
                     color: rgb(242,242,242);
                 }
