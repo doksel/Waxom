@@ -102,7 +102,7 @@ header{
         font-size: 30px;
         font-weight: 600;
     }
-    article{
+    p{
         color: rgb(140,140,140);     
         font-size: 16px;   
     }
@@ -138,11 +138,49 @@ header{
     }
 }
 
-// Малые девайсы («ландшафтные телефоны», >= 576px)
-@media (min-width: 576px) {}
+.latestProjects{
+    h2{
+        color: rgb(85,85,85);
+        font-size: 30px;
+        font-weight: 600;
+    }
+    p, li{
+        color: rgb(140,140,140);     
+        font-size: 16px;   
+    }
+    li{
+        display: block;
+        padding: 5px 20px;
+        border: solid rgb(196, 196, 196) 1px;
+        border-radius: 3px;
+    }
+    li:hover{
+        background: rgb(153,134,117);
+        color: white;
+    }
+    .card-deck{
+        h5{
+            color: rgb(140,140,140);
+        }
+        p{
+            color: rgb(140,140,140);
+        }
+        img{
+            height: 70%;
+        }
+    }
+}
 
-// Средние девайсы («таблетки», >= 768px)
-@media (min-width: 768px) {}
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (max-width: 1200px) {
+    .services{
+        .screenshots{
+            .screenshots-right, .screenshots-left{
+                top: 21.5%;
+            }   
+        } 
+    }
+}
 
 // Большие девайсы (десктопы, >= 992px)
 @media (max-width: 992px) {
@@ -153,7 +191,53 @@ header{
     header{
         padding-top: 0;
     }
+    .services{
+        .screenshots{
+            .screenshots-right, .screenshots-left{
+                top: 20.5%;
+            }   
+        } 
+    }
 }
 
-// Экстрабольшие девайсы (большие десктопы, >= 1200px)
-@media (min-width: 1200px) {}
+// Средние девайсы («таблетки», >= 768px)
+@media (max-width: 768px) {
+    .services{
+        .screenshots{
+            .screenshots-right, .screenshots-left{
+                top: 19.5%;
+            }   
+        } 
+    }
+}
+
+// Малые девайсы («ландшафтные телефоны», >= 576px)
+@media (max-width: 576px) {
+    .services{
+        .screenshots{
+            .screenshots-right, .screenshots-left{
+                top: 19%;
+            }   
+        } 
+    }
+}
+// Малые девайсы («ландшафтные телефоны», >= 576px)
+@media (max-width: 510px) {
+    .services{
+        .screenshots{
+            .screenshots-right, .screenshots-left{
+                top: 18.5%;
+            }   
+        } 
+    }
+}
+// Малые девайсы («ландшафтные телефоны», >= 576px)
+@media (max-width: 480px) {
+    .services{
+        .screenshots{
+            .screenshots-right, .screenshots-left{
+                top: 16%;
+            }   
+        } 
+    }
+}
