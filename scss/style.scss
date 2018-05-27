@@ -111,26 +111,19 @@ header{
         font-size: 16px;   
     }
     .screenshots{
-        position: relative;
-        background: rgb(167, 110, 5);
-        height: auto;
-        .screenshots-right, .screenshots-left, .screenshots-center{
+        .screenshots-right, .screenshots-left{
             position: absolute;
-            // bottom: 0;
+            width: 55%;
+            top: 23.5%;
         }
         .screenshots-right{
-            width: 55%;
             left: 45%;
         }
-        .screenshots-left{
-            
-            width: 55%;
-        }
         .screenshots-center{
+            position: relative;
             width: 60%;
             left: 20%;
         }
-    
     }
 }
 
