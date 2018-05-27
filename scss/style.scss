@@ -68,6 +68,7 @@ header{
 
 .waxomRealization{
     margin-top: 100px;
+    margin-bottom: 50px;
     img{
         height: 50px;
         width: 50px;
@@ -77,21 +78,60 @@ header{
         font-weight: 600;
     }
     article{
-        color: rgb(140,140,140);        
+        color: rgb(140,140,140); 
+        font-size: 16px;
     }
     hr{
         width: 30%;
         margin: 20px auto;
     }
     section:hover{
-        img, h3{
+        h3{
             color: rgb(199,178,153) !important;
+        }
+        svg path{
+            fill: rgb(199, 178, 153);
         }
         hr{
             background: rgb(199,178,153);
         }
     }        
 
+}
+
+.services{
+    background: rgb(251,250,248);
+    h2{
+        color: rgb(85,85,85);
+        font-size: 30px;
+        font-weight: 600;
+    }
+    article{
+        color: rgb(140,140,140);     
+        font-size: 16px;   
+    }
+    .screenshots{
+        position: relative;
+        background: rgb(167, 110, 5);
+        height: auto;
+        .screenshots-right, .screenshots-left, .screenshots-center{
+            position: absolute;
+            // bottom: 0;
+        }
+        .screenshots-right{
+            width: 55%;
+            left: 45%;
+        }
+        .screenshots-left{
+            
+            width: 55%;
+        }
+        .screenshots-center{
+            width: 60%;
+            left: 20%;
+        }
+    
+    }
 }
 
 // Малые девайсы («ландшафтные телефоны», >= 576px)

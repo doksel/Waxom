@@ -46,7 +46,8 @@ header {
       padding: 10px 20px; }
 
 .waxomRealization {
-  margin-top: 100px; }
+  margin-top: 100px;
+  margin-bottom: 50px; }
   .waxomRealization img {
     height: 50px;
     width: 50px; }
@@ -54,14 +55,41 @@ header {
     color: #555555;
     font-weight: 600; }
   .waxomRealization article {
-    color: #8c8c8c; }
+    color: #8c8c8c;
+    font-size: 16px; }
   .waxomRealization hr {
     width: 30%;
     margin: 20px auto; }
-  .waxomRealization section:hover img, .waxomRealization section:hover h3 {
+  .waxomRealization section:hover h3 {
     color: #c7b299 !important; }
+  .waxomRealization section:hover svg path {
+    fill: #c7b299; }
   .waxomRealization section:hover hr {
     background: #c7b299; }
+
+.services {
+  background: #fbfaf8; }
+  .services h2 {
+    color: #555555;
+    font-size: 30px;
+    font-weight: 600; }
+  .services article {
+    color: #8c8c8c;
+    font-size: 16px; }
+  .services .screenshots {
+    position: relative;
+    background: #a76e05;
+    height: auto; }
+    .services .screenshots .screenshots-right, .services .screenshots .screenshots-left, .services .screenshots .screenshots-center {
+      position: absolute; }
+    .services .screenshots .screenshots-right {
+      width: 55%;
+      left: 45%; }
+    .services .screenshots .screenshots-left {
+      width: 55%; }
+    .services .screenshots .screenshots-center {
+      width: 60%;
+      left: 20%; }
 
 @media (max-width: 992px) {
   .wraper {
