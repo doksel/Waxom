@@ -103,22 +103,24 @@ header {
   color: #555555;
   font-size: 30px;
   font-weight: 600; }
-.latestProjects p, .latestProjects li {
+.latestProjects p {
   color: #8c8c8c;
   font-size: 16px; }
 .latestProjects li {
   display: block;
   padding: 5px 20px;
   border: solid #c4c4c4 1px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  color: #8c8c8c;
+  margin: 5px 0; }
 .latestProjects li:hover {
   background: #998675;
   color: white; }
-.latestProjects .card-deck .card {
+.latestProjects .card {
   border: 0; }
-  .latestProjects .card-deck .card img {
+  .latestProjects .card img {
     height: 70%; }
-  .latestProjects .card-deck .card .wraper-hover {
+  .latestProjects .card .wraper-hover {
     display: none;
     position: absolute;
     top: 0;
@@ -126,10 +128,10 @@ header {
     height: 70%;
     width: 100%;
     background: rgba(54, 47, 45, 0.6); }
-  .latestProjects .card-deck .card .card-body {
+  .latestProjects .card .card-body {
     background: #fbfaf8;
     position: relative; }
-    .latestProjects .card-deck .card .card-body .arrow_card-boby {
+    .latestProjects .card .card-body .arrow_card-boby {
       height: 20px;
       width: 20px;
       background: #fbfaf8;
@@ -137,19 +139,19 @@ header {
       top: -10px;
       left: 30px;
       transform: rotate(45deg); }
-    .latestProjects .card-deck .card .card-body h5 {
+    .latestProjects .card .card-body h5 {
       color: #c7b299; }
-    .latestProjects .card-deck .card .card-body p {
+    .latestProjects .card .card-body p {
       color: #d1d1d1; }
-.latestProjects .card-deck .card:hover .wraper-hover {
+.latestProjects .card:hover .wraper-hover {
   display: flex; }
-.latestProjects .card-deck .card:hover .card-body {
+.latestProjects .card:hover .card-body {
   background: #362f2d; }
-  .latestProjects .card-deck .card:hover .card-body .arrow_card-boby {
+  .latestProjects .card:hover .card-body .arrow_card-boby {
     background: #362f2d; }
-  .latestProjects .card-deck .card:hover .card-body h5 {
+  .latestProjects .card:hover .card-body h5 {
     color: #f2f2f2; }
-  .latestProjects .card-deck .card:hover .card-body p {
+  .latestProjects .card:hover .card-body p {
     color: #c7b299; }
 
 @media (max-width: 1200px) {
