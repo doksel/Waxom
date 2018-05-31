@@ -173,8 +173,7 @@ header {
     color: #c7b299; }
 
 .exellent {
-  height: 80%;
-  padding: 100px 50px 0 50px; }
+  height: 80%; }
   .exellent h2 {
     color: #555555;
     font-size: 30px;
@@ -182,10 +181,11 @@ header {
   .exellent p, .exellent article, .exellent li {
     color: #8c8c8c;
     font-size: 16px; }
-  .exellent ul {
-    list-style-image: url(../images/exellent/icon-arrow.png); }
-    .exellent ul li {
-      margin: 15px; }
+  .exellent ul li {
+    list-style: none;
+    background: url(../images/exellent/icon-arrow.png) no-repeat;
+    padding-left: 40px;
+    margin: 15px; }
 
 .counters {
   background: #281e1b; }
@@ -197,6 +197,16 @@ header {
   .counters hr {
     background: white;
     width: 30%; }
+
+.recentPosts {
+  height: 80%; }
+  .recentPosts .text h2 {
+    color: #555555;
+    font-size: 30px;
+    font-weight: 600; }
+  .recentPosts .text p {
+    color: #8c8c8c;
+    font-size: 16px; }
 
 @media (max-width: 1200px) {
   .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
