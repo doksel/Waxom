@@ -232,6 +232,25 @@ header{
     }
 }
 
+.exellent{
+    height: 80%;
+    padding: 100px 50px 0 50px;
+    h2{
+        color: rgb(85,85,85);
+        font-size: 30px;
+        font-weight: 600;
+    }
+    p, article, li{
+        color: rgb(140,140,140);     
+        font-size: 16px;   
+    }
+    ul {
+        list-style-image: url(../images/exellent/icon-arrow.png);
+        li{
+            margin: 15px;
+        }
+    }
+}
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {
     .services{
@@ -269,6 +288,10 @@ header{
                 top: 19.5%;
             }   
         } 
+    }
+    .videoPresentation{
+        height: 100vh;
+        padding-top: 0;
     }
 }
 

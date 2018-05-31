@@ -172,6 +172,21 @@ header {
   .videoPresentation span {
     color: #c7b299; }
 
+.exellent {
+  height: 80%;
+  padding: 100px 50px 0 50px; }
+  .exellent h2 {
+    color: #555555;
+    font-size: 30px;
+    font-weight: 600; }
+  .exellent p, .exellent article, .exellent li {
+    color: #8c8c8c;
+    font-size: 16px; }
+  .exellent ul {
+    list-style-image: url(../images/exellent/icon-arrow.png); }
+    .exellent ul li {
+      margin: 15px; }
+
 @media (max-width: 1200px) {
   .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
     top: 21.5%; } }
@@ -187,7 +202,11 @@ header {
     top: 20.5%; } }
 @media (max-width: 768px) {
   .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
-    top: 19.5%; } }
+    top: 19.5%; }
+
+  .videoPresentation {
+    height: 100vh;
+    padding-top: 0; } }
 @media (max-width: 576px) {
   .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
     top: 19%; } }
