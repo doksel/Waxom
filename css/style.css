@@ -154,6 +154,24 @@ header {
   .latestProjects .card:hover .card-body p {
     color: #c7b299; }
 
+.videoPresentation {
+  height: 80vh;
+  background: url(../images/videoPresentation/bg-videopresent.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 50px; }
+  .videoPresentation .icon-play {
+    width: 100px;
+    height: 100px;
+    background: rgba(54, 47, 45, 0.6);
+    border-radius: 50%; }
+  .videoPresentation .text h2 {
+    font-size: 30px;
+    font-weight: 600; }
+  .videoPresentation .text p {
+    font-size: 16px; }
+  .videoPresentation span {
+    color: #c7b299; }
+
 @media (max-width: 1200px) {
   .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
     top: 21.5%; } }

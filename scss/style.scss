@@ -208,6 +208,30 @@ header{
     }    
 }
 
+.videoPresentation{
+    height: 80vh;
+    background: url(../images/videoPresentation/bg-videopresent.jpg)no-repeat center;
+    background-size: cover;
+    padding-top: 50px;
+    .icon-play{
+        width: 100px; height: 100px;
+        background: rgba(54,47,45, 0.6);
+        border-radius: 50%; 
+    }
+    .text{
+        h2{
+            font-size: 30px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+    span{
+        color: rgb(199,178,153);
+    }
+}
+
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {
     .services{
