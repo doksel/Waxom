@@ -187,6 +187,17 @@ header {
     .exellent ul li {
       margin: 15px; }
 
+.counters {
+  background: #281e1b; }
+  .counters .text .title {
+    font-size: 48px;
+    color: white; }
+  .counters .text p {
+    color: #c7b299; }
+  .counters hr {
+    background: white;
+    width: 30%; }
+
 @media (max-width: 1200px) {
   .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
     top: 21.5%; } }

@@ -251,6 +251,23 @@ header{
         }
     }
 }
+
+.counters{
+    background: rgb(40,30,27);
+    .text{
+        .title{
+            font-size: 48px;
+            color: white;
+        }
+        p{
+            color: rgb(199, 178, 153);
+        }
+    }
+    hr{
+        background: white;
+        width: 30%;
+    }
+}
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {
     .services{
