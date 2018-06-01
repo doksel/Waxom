@@ -1,241 +1,112 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Raleway:300,400,700,800|Roboto:300,400,700");
-.btn, header, .textBox {
-  background: #998675;
-  font-size: 14px;
-  color: white;
-  padding: 10px 20px;
-  font-weight: 800; }
+/*
+Error: Mixin border-radius is missing argument $a.
+        on line 303 of scss/style.scss, in `border-radius'
+        from line 303 of scss/style.scss
 
-.btn:hover, header, .textBox {
-  background: #c7b299; }
+298:             position: absolute;
+299:             top: 10%; left: 10%;
+300:             h
+301:             .date-block_day{
+302:                 background: rgb(54, 54, 54);
+303:                 @include border-radius();
+304:             }
+305:             .date-block_month{
+306:                 background: rgb(37, 37, 37);
+307:                 @include border-radius();
+308:             }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  color: white !important; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300; }
-
-h4 {
-  font-size: 40px; }
-
-hr {
-  display: block;
-  height: 2px;
-  background: #8c8c8c; }
-
-.wraper {
-  position: fixed;
-  top: 0; }
-  .wraper nav a {
-    color: white !important; }
-  .wraper nav .myNavbar a:hover {
-    color: #c7b299 !important; }
-
-header {
-  background: url(../images/slider/slider1.jpg) no-repeat center;
-  background-size: cover;
-  height: 100vh;
-  padding-top: 100px; }
-  header .text {
-    margin-bottom: 50px; }
-    header .text h3 {
-      font-size: 36px; }
-    header .text h1 {
-      font-size: 52px;
-      font-weight: 800; }
-    header .text p {
-      font-size: 14px; }
-
-.waxomRealization {
-  margin-top: 100px;
-  margin-bottom: 50px; }
-  .waxomRealization img {
-    height: 50px;
-    width: 50px; }
-  .waxomRealization h3 {
-    color: #555555;
-    font-weight: 600; }
-  .waxomRealization article {
-    color: #8c8c8c;
-    font-size: 16px; }
-  .waxomRealization hr {
-    width: 30%;
-    margin: 20px auto; }
-  .waxomRealization section:hover h3 {
-    color: #c7b299 !important; }
-  .waxomRealization section:hover svg path {
-    fill: #c7b299; }
-  .waxomRealization section:hover hr {
-    background: #c7b299; }
-
-.services {
-  background: #fbfaf8; }
-  .services h2 {
-    color: #555555;
-    font-size: 30px;
-    font-weight: 600; }
-  .services p {
-    color: #8c8c8c;
-    font-size: 16px; }
-  .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
-    position: absolute;
-    width: 55%;
-    top: 22%; }
-  .services .screenshots .screenshots-right {
-    left: 45%; }
-  .services .screenshots .screenshots-center {
-    position: relative;
-    width: 60%;
-    left: 20%; }
-
-.textBox {
-  background: #241d1a; }
-  .textBox .text span {
-    color: #c7b299; }
-  .textBox .text p {
-    color: #615855; }
-
-.latestProjects h2 {
-  color: #555555;
-  font-size: 30px;
-  font-weight: 600; }
-.latestProjects p {
-  color: #8c8c8c;
-  font-size: 16px; }
-.latestProjects li {
-  display: block;
-  padding: 5px 20px;
-  border: solid #c4c4c4 1px;
-  border-radius: 3px;
-  color: #8c8c8c;
-  margin: 5px 0; }
-.latestProjects li:hover {
-  background: #998675;
-  color: white; }
-.latestProjects .card {
-  border: 0; }
-  .latestProjects .card img {
-    height: 70%; }
-  .latestProjects .card .wraper-hover {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 70%;
-    width: 100%;
-    background: rgba(54, 47, 45, 0.6); }
-  .latestProjects .card .card-body {
-    background: #fbfaf8;
-    position: relative; }
-    .latestProjects .card .card-body .arrow_card-boby {
-      height: 20px;
-      width: 20px;
-      background: #fbfaf8;
-      position: absolute;
-      top: -10px;
-      left: 30px;
-      transform: rotate(45deg); }
-    .latestProjects .card .card-body h5 {
-      color: #c7b299; }
-    .latestProjects .card .card-body p {
-      color: #d1d1d1; }
-.latestProjects .card:hover .wraper-hover {
-  display: flex; }
-.latestProjects .card:hover .card-body {
-  background: #362f2d; }
-  .latestProjects .card:hover .card-body .arrow_card-boby {
-    background: #362f2d; }
-  .latestProjects .card:hover .card-body h5 {
-    color: #f2f2f2; }
-  .latestProjects .card:hover .card-body p {
-    color: #c7b299; }
-
-.videoPresentation {
-  height: 80vh;
-  background: url(../images/videoPresentation/bg-videopresent.jpg) no-repeat center;
-  background-size: cover;
-  padding-top: 50px; }
-  .videoPresentation .icon-play {
-    width: 100px;
-    height: 100px;
-    background: rgba(54, 47, 45, 0.6);
-    border-radius: 50%; }
-  .videoPresentation .text h2 {
-    font-size: 30px;
-    font-weight: 600; }
-  .videoPresentation .text p {
-    font-size: 16px; }
-  .videoPresentation span {
-    color: #c7b299; }
-
-.exellent {
-  height: 80%; }
-  .exellent h2 {
-    color: #555555;
-    font-size: 30px;
-    font-weight: 600; }
-  .exellent p, .exellent article, .exellent li {
-    color: #8c8c8c;
-    font-size: 16px; }
-  .exellent ul li {
-    list-style: none;
-    background: url(../images/exellent/icon-arrow.png) no-repeat;
-    padding-left: 40px;
-    margin: 15px; }
-
-.counters {
-  background: #281e1b; }
-  .counters .text .title {
-    font-size: 48px;
-    color: white; }
-  .counters .text p {
-    color: #c7b299; }
-  .counters hr {
-    background: white;
-    width: 30%; }
-
-.recentPosts {
-  height: 80%; }
-  .recentPosts .text h2 {
-    color: #555555;
-    font-size: 30px;
-    font-weight: 600; }
-  .recentPosts .text p {
-    color: #8c8c8c;
-    font-size: 16px; }
-
-@media (max-width: 1200px) {
-  .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
-    top: 21.5%; } }
-@media (max-width: 992px) {
-  .wraper {
-    background: #353535;
-    position: relative !important; }
-
-  header {
-    padding-top: 0; }
-
-  .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
-    top: 20.5%; } }
-@media (max-width: 768px) {
-  .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
-    top: 19.5%; }
-
-  .videoPresentation {
-    height: 100vh;
-    padding-top: 0; } }
-@media (max-width: 576px) {
-  .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
-    top: 19%; } }
-@media (max-width: 510px) {
-  .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
-    top: 18.5%; } }
-@media (max-width: 480px) {
-  .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
-    top: 16%; } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+scss/style.scss:303:in `border-radius'
+scss/style.scss:303
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:75:in `block in perform_arguments'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:67:in `zip'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:67:in `perform_arguments'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:362:in `block in visit_mixin'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-3.5.5/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby24/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Mixin border-radius is missing argument $a.\A         on line 303 of scss/style.scss, in `border-radius'\A         from line 303 of scss/style.scss\A \A 298:             position: absolute;\A 299:             top: 10%; left: 10%;\A 300:             h\A 301:             .date-block_day{\A 302:                 background: rgb(54, 54, 54);\A 303:                 @include border-radius();\A 304:             }\A 305:             .date-block_month{\A 306:                 background: rgb(37, 37, 37);\A 307:                 @include border-radius();\A 308:             }"; }

@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800|Raleway:300,400,700,800|Roboto:300,400,700');
 @import '_button';
+@import '_mixin_border';
 
 
 body{
@@ -272,20 +273,66 @@ header{
 
 .recentPosts{
     height: 80%;
-    .text{
-        h2{
-            color: rgb(85,85,85);
-            font-size: 30px;
-            font-weight: 600;
-        }
-        p{
-            color: rgb(140,140,140);     
-            font-size: 16px;   
-        }    
+    .wraper-hover{
+        display: none;
+        position: absolute;
+        top: 0;left: 0;
+        height: 70%;width: 100%;
+        background: rgba(54,47,45, 0.6); 
     }
+
+    h2, h5{
+        color: rgb(85,85,85);
+        font-size: 30px;
+        font-weight: 600;
+    }
+    p{
+        color: rgb(140,140,140);     
+        font-size: 16px;   
+    }    
     .card{
-        
+        img{
+
+        }
+        .date-block{
+            position: absolute;
+            top: 10%; left: 10%;
+            h
+            .date-block_day{
+                background: rgb(54, 54, 54);
+                @include border-radius();
+            }
+            .date-block_month{
+                background: rgb(37, 37, 37);
+                @include border-radius();
+            }
+        }
+        .card-body{
+            h5{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;   
+            }
+            a{
+                color: rgb(199,178,153);
+            }      
+        }
     }
+    .card:hover{
+        .wraper-hover{
+            display: flex;
+        } 
+        .card-body{
+            background: rgb(54,47,45); 
+            h5{
+                color: rgb(199,178,153);
+            }
+            p{
+                color: white;
+            }   
+        }        
+    }    
 }
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {
