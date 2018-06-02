@@ -273,14 +273,6 @@ header{
 
 .recentPosts{
     height: 80%;
-    .wraper-hover{
-        display: none;
-        position: absolute;
-        top: 0;left: 0;
-        height: 70%;width: 100%;
-        background: rgba(54,47,45, 0.6); 
-    }
-
     h2, h5{
         color: rgb(85,85,85);
         font-size: 30px;
@@ -289,23 +281,39 @@ header{
     p{
         color: rgb(140,140,140);     
         font-size: 16px;   
-    }    
+    }  
+    a{
+        text-decoration: none;
+    }  
     .card{
+        border-color: white;
+        .wraper-hover{
+            display: none;
+            position: absolute;
+            top: 0;left: 0;
+            height: 50%;width: 100%;
+            background: rgba(54,47,45, 0.6); 
+        }  
         img{
-
-        }
+            height: 50%;
+        }  
         .date-block{
             position: absolute;
-            top: 10%; left: 10%;
-            h
+            top: 5%; left: 5%;
             .date-block_day{
+                font-size: 24px;
                 background: rgb(54, 54, 54);
-                @include border-radius();
+                @include border-radius(5px 5px 0 0);
             }
             .date-block_month{
+                font-size: 12px;
                 background: rgb(37, 37, 37);
-                @include border-radius();
+                @include border-radius(0 0 5px 5px);
             }
+        }
+        .slider-arrow{
+            position: absolute;
+            top: 45%; left: 25%;
         }
         .card-body{
             h5{
@@ -322,17 +330,25 @@ header{
     .card:hover{
         .wraper-hover{
             display: flex;
-        } 
-        .card-body{
-            background: rgb(54,47,45); 
-            h5{
-                color: rgb(199,178,153);
+        }
+            .card-body{
+                background: rgb(54,47,45); 
+                h5{
+                    color: rgb(199,178,153);
+                }
+                p{
+                    color: white;
+                }   
+            }        
+            .date-block{
+                .date-block_day{
+                    background: rgb(199,178,153);
+                }
+                .date-block_month{
+                    background: rgb(164, 141, 114);
+                }
             }
-            p{
-                color: white;
-            }   
-        }        
-    }    
+        }   
 }
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {
