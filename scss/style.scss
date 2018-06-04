@@ -9,7 +9,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 14px;
-    color: white !important;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -331,24 +331,39 @@ header{
         .wraper-hover{
             display: flex;
         }
-            .card-body{
-                background: rgb(54,47,45); 
-                h5{
-                    color: rgb(199,178,153);
-                }
-                p{
-                    color: white;
-                }   
-            }        
-            .date-block{
-                .date-block_day{
-                    background: rgb(199,178,153);
-                }
-                .date-block_month{
-                    background: rgb(164, 141, 114);
-                }
+        .card-body{
+            background: rgb(54,47,45); 
+            h5{
+                color: rgb(199,178,153);
             }
-        }   
+            p{
+                color: white;
+            }   
+        }        
+        .date-block{
+            .date-block_day{
+                background: rgb(199,178,153);
+            }
+            .date-block_month{
+                background: rgb(164, 141, 114);
+            }
+        }
+    }   
+}
+
+.partners{
+    background: url(../images/partners/bg-partners.jpg) no-repeat center;
+    position: relative;
+    .wraper-bg{
+        position: absolute;
+        width: 100%;height: 100%;
+        top: 0;left: 0;
+        z-index: 3;
+        background: rgba(25,25,25,0.7);
+    }
+    .partner{
+        z-index: 15;
+    }
 }
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {

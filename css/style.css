@@ -13,7 +13,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 14px;
-  color: white !important; }
+  color: white; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway', sans-serif;
@@ -261,6 +261,20 @@ header {
     background: #c7b299; }
   .recentPosts .card:hover .date-block .date-block_month {
     background: #a48d72; }
+
+.partners {
+  background: url(../images/partners/bg-partners.jpg) no-repeat center;
+  position: relative; }
+  .partners .wraper-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: rgba(25, 25, 25, 0.7); }
+  .partners .partner {
+    z-index: 15; }
 
 @media (max-width: 1200px) {
   .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
