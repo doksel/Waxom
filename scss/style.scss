@@ -296,7 +296,14 @@ header{
         }  
         img{
             height: 50%;
-        }  
+        }
+        .circles-slider{
+            position: absolute;
+            top: 40%;
+            img{
+                margin-right: 12px;
+            }
+        }
         .date-block{
             position: absolute;
             top: 5%; left: 5%;

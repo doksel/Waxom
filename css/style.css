@@ -221,6 +221,11 @@ header {
       background: rgba(54, 47, 45, 0.6); }
     .recentPosts .card img {
       height: 50%; }
+    .recentPosts .card .circles-slider {
+      position: absolute;
+      top: 40%; }
+      .recentPosts .card .circles-slider img {
+        margin-right: 12px; }
     .recentPosts .card .date-block {
       position: absolute;
       top: 5%;
