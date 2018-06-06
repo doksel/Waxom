@@ -372,6 +372,13 @@ header{
         z-index: 15;
     }
 }
+
+footer{
+    background: rgb(25,25,25);
+    waxom 34px 14 col85,85,85 col209,209,209
+    next 24px 14 col54,54,54 col85,85,85 col199,178,153
+    link col0,191,243 col149,149,149
+}
 // Экстрабольшие девайсы (большие десктопы, >= 1200px)
 @media (max-width: 1200px) {
     .services{
