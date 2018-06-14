@@ -281,6 +281,13 @@ header {
   .partners .partner {
     z-index: 15; }
 
+footer {
+  background: #191919; }
+  footer a {
+    color: white !important; }
+  footer .linkReadMore {
+    color: white !important; }
+
 @media (max-width: 1200px) {
   .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
     top: 21.5%; } }
