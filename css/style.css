@@ -282,11 +282,50 @@ header {
     z-index: 15; }
 
 footer {
-  background: #191919; }
+  background: #191919;
+  font-size: 14px; }
   footer a {
     color: white !important; }
-  footer .linkReadMore {
-    color: white !important; }
+  footer h4 {
+    color: white;
+    font-size: 24px;
+    font-weight: 700; }
+  footer .text {
+    color: #555555;
+    font-size: 14px; }
+  footer .date, footer .time {
+    color: #363636;
+    font-size: 14px; }
+  footer hr {
+    height: 0px;
+    background: #252525; }
+  footer .aboutWaxom .title a {
+    font-size: 34px;
+    text-decoration: none; }
+  footer .aboutWaxom .title .linkReadMore a {
+    color: #555555 !important; }
+  footer .recentPosts .block-2 .date {
+    color: white; }
+  footer .recentPosts .block-2 .text {
+    color: #c7b299; }
+  footer .ourTwitter span {
+    color: #00bff3; }
+  footer .ourTwitter .block-3 span {
+    color: #959595; }
+  footer .dribbbleWidret img {
+    height: 100px;
+    max-width: 50%; }
+  footer .footer-down {
+    background: #252525;
+    color: #555555; }
+    footer .footer-down span {
+      color: #959595; }
+    footer .footer-down .right-block .block1 {
+      border-right: solid 1px #555555; }
+    footer .footer-down .left-block .block1, footer .footer-down .left-block .block2, footer .footer-down .left-block .block3 {
+      border-right: solid 1px #555555; }
+    footer .footer-down .left-block .block3 {
+      color: #c7b299; }
 
 @media (max-width: 1200px) {
   .services .screenshots .screenshots-right, .services .screenshots .screenshots-left {
