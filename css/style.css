@@ -38,8 +38,7 @@ hr {
 header {
   background: url(../images/slider/slider1.jpg) no-repeat center;
   background-size: cover;
-  height: 100vh;
-  padding-top: 100px; }
+  padding: 100px 0; }
   header .text {
     margin-bottom: 50px; }
     header .text h3 {
@@ -174,6 +173,8 @@ header {
 
 .exellent {
   height: 80%; }
+  .exellent .image img {
+    width: 100%; }
   .exellent h2 {
     color: #555555;
     font-size: 30px;

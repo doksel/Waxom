@@ -45,8 +45,7 @@ hr{
 header{
     background: url(../images/slider/slider1.jpg) no-repeat center;
     background-size: cover;
-    height: 100vh;
-    padding-top: 100px;
+    padding: 100px 0;
     @extend .btn;
     @extend .btn:hover;
     .text{
@@ -236,6 +235,11 @@ header{
 
 .exellent{
     height: 80%;
+    .image{
+        img{
+            width: 100%;
+        }
+    }
     h2{
         color: rgb(85,85,85);
         font-size: 30px;
